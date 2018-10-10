@@ -1,3 +1,3 @@
 # DSC mini Hackton
 
-[Link page]()
+[Link page](https://dsc-bumigora.github.io/hackton/)
