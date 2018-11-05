@@ -33,9 +33,15 @@ p {
   background: rgba(0,0,0, 0.4);
 }
 
-.people-name {
-  padding: 16px !important;
+.card-title {
+  text-align: center;
   width: 100%;
+  padding: 10px;
+  background: rgba(0,0,0, 0.4)
+}
+
+
+.card-image:hover .card-title{
   background: rgba(0,0,0, 0.8)
 }
 
