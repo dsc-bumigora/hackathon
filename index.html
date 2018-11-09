@@ -383,16 +383,27 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
+  var dest = new Date("Nov 10, 2018 08:00:00");
+  var date = new Date();
+
+  var countDownDate = dest.getTime()
+  var close = date.getDate();
+  var on = dest.getDate();
+  
+  
   $(document).ready(() => {
     $('#modal1').modal({
       dismissible:false,
     });
-    $('#modal1').modal('open');
+    console.log(on === close);
+    
+    if ((on === close) === false) {
+      $('#modal1').modal('open');
+    }
 
   })
 
     // Set the date we're counting down to
-  var countDownDate = new Date("Nov 10, 2018 08:00:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
