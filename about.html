@@ -54,95 +54,26 @@
 
   <div class="container">
     <div class="section">
-        <b><p class="header col s12 light">Hari/Tanggal: Sabtu, 01 Desember 2018</p></b>
-        <table class="responsive-table">
-            <thead style="background-color:green; color: white">
-                <th>No</th>
-                <th>Jam Mulai</th>
-                <th>Nama kegiatan</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>07:00 - 09:00</td>
-                    <td>Registrasi</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>09:00 - 10:00</td>
-                    <td>Pembukaan && Sambutan</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>10:00 - 12:00</td>
-                    <td>Workshop</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>12:00 - 13:00</td>
-                    <td>Ishoma (Istrahat, Shalat, Makan)</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>13:00 - 14:30</td>
-                    <td>Registrasi Team</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>14:30 - 15:30</td>
-                    <td>Start Hackathon</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>15:30 - 16:00</td>
-                    <td>Ishoma</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>18:20 - 19:40</td>
-                    <td>Ishoma (Istrahat, Shalat, Makan)</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>19:40 - 08:00</td>
-                    <td>Next Hackathon</td>
-                </tr>
-            </tbody>
-        </table>
-
-    </div>
-    <div class="section">
-        <b><p class="header col s12 light">Hari/Tanggal: Minggu, 02 Desember 2018</p></b>
-        <table class="responsive-table">
-            <thead style="background-color:green; color: white">
-                <th>No</th>
-                <th>Jam Mulai</th>
-                <th>Nama kegiatan</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>08:00 - 09:00</td>
-                    <td>Registrasi, Sarapan Serta Persiapan Persentasi</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>09:00 - 15:00</td>
-                    <td>Persentasi</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>15:00 - 15:45</td>
-                    <td>Pengumuman Pemenang Sekaligus Pembagian Hadiah</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>15:45 - 17:00</td>
-                    <td>Penutup, Sesi Foto</td>
-                </tr>
-            </tbody>
-        </table>
-
+        <ul class="collapsible popout">
+            <li>
+            <div class="collapsible-header">Apa itu Hackathon ?</div>
+            <div class="collapsible-body"><span>
+                Hackathon adalah saat berkumpulnya programmer, project manager, praktisi IT, 
+                ict researcher/enthusiast untuk membangun aplikasi (hacking) untuk menyelesaikan masalah tertentu. 
+                Pembuatan aplikasi ini dilakukan dengan sangat singkat (1–3 hari) alias marathon. 
+                Sehingga kalau disambungkan hacking + marathon muncul istilah hackathon. <br>
+                <a target="_blank" href="https://medium.com/@taufiqsyahrir/proses-pembuatan-aplikasi-di-kompetisi-hackathon-629a4f137647">Lebih Lanjut</a>
+            </span></div>
+            </li>
+            <li>
+            <div class="collapsible-header"></i>Pendaftaran</div>
+            <div class="collapsible-body"><span>Pendaftaran akan dibuka mulai dari 10-28 November 2018. Baca lagi <a target="_blank" href="road.html">Timeline</a> untuk keterangan lebih lanjut.</span></div>
+            </li>
+            <li>
+            <div class="collapsible-header"></i>Pembayaran Baiaya Pendaftaran ?</div>
+            <div class="collapsible-body"><span>Pembayaran pendaftaran akan di infokan lebih lanjut melalui email setelah anda registrasi.</span></div>
+            </li>
+        </ul>
     </div>
   </div>
 
@@ -185,5 +116,17 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
+    });
+  </script>
   </body>
 </html>
