@@ -387,17 +387,16 @@
   var date = new Date();
 
   var countDownDate = dest.getTime()
-  var close = date.getDate();
-  var on = dest.getDate();
-  
+
+  var on = date.getDate();
+  var destination = dest.getDate();
   
   $(document).ready(() => {
     $('#modal1').modal({
       dismissible:false,
     });
-    console.log(on === close);
     
-    if ((on === close) === false) {
+    if (destination > on) {
       $('#modal1').modal('open');
     }
 
