@@ -33,6 +33,10 @@ p {
   /* background: rgba(0,0,0, 0.4); */
 }
 
+.headline {
+  margin-bottom:400px
+}
+
 .card-title {
   text-align: center;
   width: 100%;
