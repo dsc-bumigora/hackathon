@@ -15,15 +15,14 @@ p {
   line-height: 2rem;
 }
 
-.mb-1 {
+.mb1 {
   margin-bottom: 1em;
 }
 
-.media-partner {
+.partner {
     display: inline-block;
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 10px;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
 }
 
 .sidenav-trigger {
