@@ -20,7 +20,7 @@
         <a id="logo-container" href="index.html" class="brand-logo">
             <img src="img/hack.png" alt="logo" width="160" height="60" style="margin-top:2px;">
         </a>
-        <ul class="right hide-on-med-and-down">
+        <ul class="right hide-today-med-and-down">
           <li><a href="index.html">Home</a></li>
           <li><a href="agenda.html">Agenda</a></li>
           <li><a href="location.html">Location</a></li>
@@ -149,7 +149,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img/background2.png" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="img/at.png" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -244,6 +244,18 @@
               </div>
             </div>
 
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img style="height:290px;" src="img//people/alawy.jpg">
+                  <span class="card-title" style="font-size:14px;">Nasrul Alawy</span>
+                </div>
+                <div class="card-content">
+                  <span class="card-body">Techical / Game Dev</span>
+                </div>
+              </div>
+            </div>
+
           </div>
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Mentor (Night Mode)</h4>
@@ -331,9 +343,10 @@
           <h5>Hy Kamu. iya kamu 😍 , Selamat datang di ...</h5>
           <img src="img/hack.png" alt="logo" width="200" height="80"> 
           
-          <p>Tunggu ya, beberapa hari lagi tepatnya <b>'10 November 2018'</b> pendaftaran akan kami buka !</p>
+          <p>Hallo Sahabat, pendaftaran Hackathon Bumigora akan kami perpanjang hingga <br> <b>'05 january 2019'</b></p>
+          <p>Mohon maaf atas mundurnya acara. Tetap semangat !</p>
           <p>Siapkan fisik, mental, dan pikiranmu 😀 . Jadilah bagian dari keseruan event ini.</p>
-          <p>yang paling penting siapkan team andalanmu dan menangkan hadiah jutaan rupiah</p>
+          <p>yang paling penting siapkan team andalanmu dan menangkan hadiah jutaan rupiah serta <br> Satu paket Android Things</p>
           <h4>🤑</h4>
           <b style="font-size:40px" class="s12"><p id="demo" class="s12"></p></b>
       </center>
@@ -383,20 +396,34 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-  var dest = new Date("Nov 10, 2018 08:00:00");
+  var dest = new Date("Jan 05, 2019 08:00:00");
   var date = new Date();
 
   var countDownDate = dest.getTime()
 
-  var on = date.getDate();
   var destination = dest.getDate();
+  
+  // function month (b) {
+  //   const mS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+  //   let value = '';
+  //   mS.forEach((v, i) => {
+  //     const index = i;
+  //     if (index === b) value = v;
+      
+  //   });
+  //   return value;
+  // }
+
+  // console.log(`${month(date.getMonth())} ${today}, ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
+  // var feature = 
+  var today = new Date(`${date.getMonth()} ${date.getDate()}, ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
   
   $(document).ready(() => {
     $('#modal1').modal({
       dismissible:false,
     });
     
-    if (destination > on) {
+    if (dest > today) {
       $('#modal1').modal('open');
     }
 
