@@ -15,6 +15,17 @@ p {
   line-height: 2rem;
 }
 
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.media-partner {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
 .sidenav-trigger {
   color: #26a69a;
 }
